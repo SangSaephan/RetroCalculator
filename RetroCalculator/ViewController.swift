@@ -60,6 +60,11 @@ class ViewController: UIViewController {
         outputLabel.text = runningNumber
     }
     
+    @IBAction func clearPressed(send: UIButton) {
+        processOperation(operation: Operation.Empty)
+        outputLabel.text = "0"
+    }
+    
     @IBAction func onDividePressed(sender: AnyObject) {
         processOperation(operation: Operation.Divide)
     }
@@ -107,6 +112,7 @@ class ViewController: UIViewController {
                 leftValue = result
                 outputLabel.text = result
             }
+            
             currentOperation = operation
         } else {
             leftValue = runningNumber

@@ -50,10 +50,26 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ASr-5J-6Vx">
-                                <rect key="frame" x="60" y="194" width="256" height="280"/>
+                                <rect key="frame" x="60" y="156.5" width="256" height="355"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nw4-hQ-3ca">
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LiY-Rd-VWk">
                                         <rect key="frame" x="0.0" y="0.0" width="256" height="55"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pM-ip-mkW">
+                                                <rect key="frame" x="0.0" y="0.0" width="256" height="55"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="1qV-U3-jNA"/>
+                                                    <constraint firstAttribute="height" constant="55" id="WMq-Gp-CXb"/>
+                                                </constraints>
+                                                <state key="normal" image="clear"/>
+                                                <connections>
+                                                    <action selector="clearPressedWithSend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zQT-w8-UTq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nw4-hQ-3ca">
+                                        <rect key="frame" x="0.0" y="75" width="256" height="55"/>
                                         <subviews>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpm-ga-bcb">
                                                 <rect key="frame" x="0.0" y="0.0" width="56.5" height="55"/>
@@ -102,7 +118,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="mMt-g0-E12">
-                                        <rect key="frame" x="0.0" y="75" width="256" height="55"/>
+                                        <rect key="frame" x="0.0" y="150" width="256" height="55"/>
                                         <subviews>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lq-rP-hxV">
                                                 <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
@@ -151,7 +167,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XTK-Gq-8ax">
-                                        <rect key="frame" x="0.0" y="150" width="256" height="55"/>
+                                        <rect key="frame" x="0.0" y="225" width="256" height="55"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T60-T5-uBe">
                                                 <rect key="frame" x="0.0" y="0.0" width="56.5" height="55"/>
@@ -200,7 +216,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ue0-g3-jSk">
-                                        <rect key="frame" x="0.0" y="225" width="256" height="55"/>
+                                        <rect key="frame" x="0.0" y="300" width="256" height="55"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bte-SZ-d8C">
                                                 <rect key="frame" x="0.0" y="0.0" width="56.5" height="55"/>
@@ -303,6 +319,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
